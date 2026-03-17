@@ -1,6 +1,6 @@
 # Kotlin Homepage - Migrarion to React Router 7 Framework Mode
 
-The goal of this project was to migrate a Kotlin homegape [text](https://kotlinlang.org/) from original legacy React setup to React Router 7 Framework Mode with Server-Side Rendering (SSR).
+The goal of this project was to migrate a Kotlin homegape https://kotlinlang.org from original legacy React setup to React Router 7 Framework Mode with Server-Side Rendering (SSR).
 
 The original source project is a stripped-down version of a past revision of the https://kotlinlang.org website containing only the homepage.
 

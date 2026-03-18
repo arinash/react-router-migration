@@ -12,4 +12,9 @@ export default defineConfig({
   ssr: {
     noExternal: [/@rescui\/.*/],
   },
+  resolve: {
+    alias: {
+      "@rescui/card": "@rescui/card/lib/",
+    },
+  }
 });

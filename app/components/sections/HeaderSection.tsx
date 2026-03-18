@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '@rescui/button';
 import {useTextStyles} from '@rescui/typography';
-// import {cardCn} from '@rescui/card';
+import {cardCn} from '@rescui/card';
 import cn from 'classnames';
 
 import { Container, Section } from '../Layout';
@@ -50,18 +50,13 @@ export function HeaderSection() {
                 </div>
 
                 <div className="kto-grid kto-grid-gap-16 kto-offset-top-48">
-                    {visibleCards.map((card) => (
-                        <a
-                            key={card.id}
-                            href={card.link}
-                            className={cn(
-                            'card card-dark card-clickable',
-                            'kto-col-3',
-                            'kto-col-md-6',
-                            'kto-col-sm-12'
-                            )}
-                        >
-                            <img src={card.img} alt={card.title} />
+                    {visibleCards.map(card => (
+                        <a key={card.id} href={card.link} className={cn(cardCn({
+                            theme: 'dark',
+                            mode: 'classic',
+                            isClickable: true
+                        }), 'kto-col-3 kto-col-md-6 kto-col-sm-12')}>
+                            <img src={card.img} alt=""></img>
                             <h2 className={cn(textCn('rs-h3'), 'kto-offset-top-16')}>{card.title}</h2>
                             <p className={cn(textCn('rs-text-2'), 'kto-offset-top-16')}>{card.subTitle}</p>
                         </a>

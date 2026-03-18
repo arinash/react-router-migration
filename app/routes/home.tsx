@@ -8,10 +8,10 @@ import { UsageSection } from "../components/sections/UsageSection";
 import { LatestFromKotlinSection } from "../components/sections/LatestSection";
 import { StartSection } from "../components/sections/StartSection";
 
-hljs.registerLanguage("kotlin", kotlin);
-
 import "../styles/grid.scss";
 import "../styles/images.scss";
+
+hljs.registerLanguage("kotlin", kotlin);
 
 function PageContent() {
     return (

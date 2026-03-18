@@ -57,4 +57,4 @@ docker run -p 3000:3000 my-app
 
 ### Notes
 - The project contains only one page, navigation links are non-functional by design — this has not been changed in accordance with the assignment.
-- It was decided not to use Header and Footer since they use require() function which is not defined in Vite's SSR.
+- It was decided not to use Header and Footer from '@jetbrains/kotlin-web-site-ui/dist/header.js' since they can be used by client-side rendering only.
